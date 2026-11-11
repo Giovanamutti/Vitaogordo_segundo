@@ -1,0 +1,12 @@
+{
+  "name": "cadastro-cliente",
+  "version": "1.0.0",
+  "description": "Sistema de cadastro de clientes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "sqlite3": "^6.0.1"
+  }
+}
