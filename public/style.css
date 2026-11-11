@@ -1,0 +1,202 @@
+:root {
+  --cor-fundo: #f8f5f0;
+  --cor-card: #ffffff;
+  --cor-primaria: #8b4513;
+  --cor-primaria-hover: #6b350e;
+  --cor-texto: #2d2b2a;
+  --cor-borda: #e2d7cd;
+  --cor-erro: #c53030;
+  --cor-sucesso: #2f855a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.header-livraria {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--cor-borda);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-livraria h1 {
+  color: var(--cor-primaria);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.header-livraria p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.pagina-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-card {
+  background: var(--cor-card);
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--cor-borda);
+  width: 100%;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.linha label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.campo-nome { flex: 2 1 280px; }
+.campo-cep { flex: 1 1 140px; }
+.campo-cpf { flex: 1 1 160px; }
+.campo-telefone { flex: 1 1 160px; }
+.campo-data { flex: 1 1 160px; }
+
+label span {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 5px;
+  font-size: 0.95rem;
+  background-color: #fafafa;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  background-color: #fff;
+}
+
+button[type="submit"] {
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+.secao-tabela {
+  width: 100%;
+}
+
+.secao-tabela h2 {
+  font-size: 1.3rem;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+.tabela-container {
+  background: var(--cor-card);
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th {
+  background-color: #f1ebd9;
+  color: var(--cor-primaria);
+  font-weight: 600;
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--cor-borda);
+  font-size: 0.9rem;
+}
+
+td button {
+  background-color: transparent;
+  color: var(--cor-erro);
+  border: 1px solid var(--cor-erro);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+td button:hover {
+  background-color: var(--cor-erro);
+  color: white;
+}
+
+#aviso {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--cor-sucesso);
+}
+
+#aviso.erro {
+  color: var(--cor-erro);
+}
